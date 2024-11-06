@@ -35,17 +35,4 @@ SET name='Jerry',
 	birthday= '1960-06-16'
 WHERE id=25;
 
-DELETE FROM employee
-WHERE id=5;
-
-DELETE FROM employee
-WHERE id=10;
-
-DELETE FROM employee
-WHERE id=15;
-
-DELETE FROM employee
-WHERE id=20;
-
-DELETE FROM employee
-WHERE id=25;
+DELETE FROM employee WHERE id BETWEEN 25 AND 30;
