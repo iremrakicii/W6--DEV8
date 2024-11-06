@@ -47,9 +47,5 @@ Bu işlemler ile id değeri belirli olan çalışanların adı, e-posta adresi v
 Bazı çalışan kayıtları, çalışan id değerine göre silinmiştir:
 
 ```sql
-DELETE FROM employee
-WHERE id=5;
-
-DELETE FROM employee
-WHERE id=10;
+DELETE FROM employee WHERE id BETWEEN 25 AND 30;
 ```
