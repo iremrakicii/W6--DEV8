@@ -1,63 +1,51 @@
-###############################################################################
-# Set default behavior to automatically normalize line endings.
-###############################################################################
-* text=auto
+CREATE TABLE employee(
+id INTEGER PRIMARY KEY,
+name VARCHAR(50) NOT NULL,
+birthday DATE
+email VARCHAR(100),
+);
 
-###############################################################################
-# Set default behavior for command prompt diff.
-#
-# This is need for earlier builds of msysgit that does not have it on by
-# default for csharp files.
-# Note: This is only used by command line
-###############################################################################
-#*.cs     diff=csharp
+UPDATE employee
+SET name='Mary',
+    email='maryko@gmail.com',
+	birthday= '1950-07-17'
+WHERE id=40;
 
-###############################################################################
-# Set the merge driver for project and solution files
-#
-# Merging from the command prompt will add diff markers to the files if there
-# are conflicts (Merging from VS is not affected by the settings below, in VS
-# the diff markers are never inserted). Diff markers may cause the following 
-# file extensions to fail to load in VS. An alternative would be to treat
-# these files as binary and thus will always conflict and require user
-# intervention with every merge. To do so, just uncomment the entries below
-###############################################################################
-#*.sln       merge=binary
-#*.csproj    merge=binary
-#*.vbproj    merge=binary
-#*.vcxproj   merge=binary
-#*.vcproj    merge=binary
-#*.dbproj    merge=binary
-#*.fsproj    merge=binary
-#*.lsproj    merge=binary
-#*.wixproj   merge=binary
-#*.modelproj merge=binary
-#*.sqlproj   merge=binary
-#*.wwaproj   merge=binary
+UPDATE employee
+SET name='Jane',
+    email='janeemo@gmail.com',
+	birthday= '1960-09-19'
+WHERE id=15;
 
-###############################################################################
-# behavior for image files
-#
-# image files are treated as binary by default.
-###############################################################################
-#*.jpg   binary
-#*.png   binary
-#*.gif   binary
+UPDATE employee
+SET name='Harry',
+    email='harrymarr@gmail.com',
+	birthday= '1970-05-18'
+WHERE id=20;
 
-###############################################################################
-# diff behavior for common document formats
-# 
-# Convert binary document formats to text before diffing them. This feature
-# is only available from the command line. Turn it on by uncommenting the 
-# entries below.
-###############################################################################
-#*.doc   diff=astextplain
-#*.DOC   diff=astextplain
-#*.docx  diff=astextplain
-#*.DOCX  diff=astextplain
-#*.dot   diff=astextplain
-#*.DOT   diff=astextplain
-#*.pdf   diff=astextplain
-#*.PDF   diff=astextplain
-#*.rtf   diff=astextplain
-#*.RTF   diff=astextplain
+UPDATE employee
+SET name='Curly',
+    email='curlycoo@gmail.com',
+	birthday= '1980-03-12'
+WHERE id=30;
+
+UPDATE employee
+SET name='Jerry',
+    email='tomjerryy@gmail.com',
+	birthday= '1960-06-16'
+WHERE id=25;
+
+DELETE FROM employee
+WHERE id=5;
+
+DELETE FROM employee
+WHERE id=10;
+
+DELETE FROM employee
+WHERE id=15;
+
+DELETE FROM employee
+WHERE id=20;
+
+DELETE FROM employee
+WHERE id=25;
