@@ -7,32 +7,32 @@ email VARCHAR(100),
 
 UPDATE employee
 SET name='Mary',
-    email='maryko@gmail.com',
-	birthday= '1950-07-17'
+email='maryko@gmail.com',
+birthday= '1950-07-17'
 WHERE id=40;
 
 UPDATE employee
 SET name='Jane',
-    email='janeemo@gmail.com',
-	birthday= '1960-09-19'
+email='janeemo@gmail.com',
+birthday= '1960-09-19'
 WHERE id=15;
 
 UPDATE employee
 SET name='Harry',
-    email='harrymarr@gmail.com',
-	birthday= '1970-05-18'
+email='harrymarr@gmail.com',
+birthday= '1970-05-18'
 WHERE id=20;
 
 UPDATE employee
 SET name='Curly',
-    email='curlycoo@gmail.com',
-	birthday= '1980-03-12'
+email='curlycoo@gmail.com',
+birthday= '1980-03-12'
 WHERE id=30;
 
 UPDATE employee
 SET name='Jerry',
-    email='tomjerryy@gmail.com',
-	birthday= '1960-06-16'
+email='tomjerryy@gmail.com',
+birthday= '1960-06-16'
 WHERE id=25;
 
 DELETE FROM employee WHERE id BETWEEN 25 AND 30;
